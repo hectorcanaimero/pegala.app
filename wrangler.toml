@@ -1,0 +1,20 @@
+name = "pegala-app"
+pages_build_output_dir = "./dist"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_als"]
+
+[build]
+command = "npm run build.cloudflare"
+watch_dir = "src"
+
+# Variables de entorno para preview/staging
+[env.preview.vars]
+PUBLIC_SUPABASE_URL=https://raffle.pideai.com
+PUBLIC_SUPABASE_ANON_KEY=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc1MDI5NTQ2MCwiZXhwIjo0OTA1OTY5MDYwLCJyb2xlIjoiYW5vbiJ9.0U4rR5484yTrQJa8B2Apbzh_Kg64DDW-iul5mU-jbzs
+ENVIRONMENT = "preview"
+
+# Variables de entorno para producción
+[env.production.vars]
+PUBLIC_SUPABASE_URL=https://raffle.pideai.com
+PUBLIC_SUPABASE_ANON_KEY=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc1MDI5NTQ2MCwiZXhwIjo0OTA1OTY5MDYwLCJyb2xlIjoiYW5vbiJ9.0U4rR5484yTrQJa8B2Apbzh_Kg64DDW-iul5mU-jbzs
+ENVIRONMENT = "production" 
