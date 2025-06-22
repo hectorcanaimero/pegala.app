@@ -40,7 +40,7 @@
     "undici": "*",
     "vite": "5.3.5",
     "vite-tsconfig-paths": "^4.2.1",
-    "wrangler": "^4.20.5"
+    "wrangler": "^4"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.50.0",
