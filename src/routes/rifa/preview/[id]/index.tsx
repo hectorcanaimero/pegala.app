@@ -1,6 +1,6 @@
 import { component$, useSignal } from '@builder.io/qwik';
 import { routeLoader$ } from '@builder.io/qwik-city';
-import { supabase } from '../../../libs/supabase';
+import { supabase } from '../../../../libs/supabase';
 
 export const useRaffleLoader = routeLoader$(async ({ params }) => {
   const { id } = params;

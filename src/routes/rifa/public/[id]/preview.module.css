@@ -1,0 +1,31 @@
+.header {
+  background-color: #618aff;
+  padding: 1rem;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  border-radius: 0 0 1rem 1rem;
+}
+.number-box {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.btn-round {
+  width: 45px;
+  height: 45px;
+  font-size: 1.25rem;
+  border-radius: 50%;
+}
+.footer-btns {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
