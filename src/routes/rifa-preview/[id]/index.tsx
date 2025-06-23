@@ -9,7 +9,6 @@ export const useRaffleLoader = routeLoader$(async ({ params }) => {
     .select('*')
     .eq('id', id)
     .single();
-
   if (error) {
     console.error('Error fetching rifa:', error.message);
     throw error;
