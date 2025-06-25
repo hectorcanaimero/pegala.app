@@ -6,8 +6,11 @@
 
 # Development
 node_modules
-.env
+.env.local
 *.local
+
+# Environment files
+.env
 
 # Cache
 .cache

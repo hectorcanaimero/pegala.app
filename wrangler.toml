@@ -1,0 +1,14 @@
+name = "pegala-app"
+compatibility_date = "2023-05-18"
+
+[env.production]
+name = "pegala-app"
+
+[env.preview]
+name = "pegala-app-preview"
+
+# Environment variables for Cloudflare Pages
+# Set these in your Cloudflare Pages dashboard
+# PUBLIC_SUPABASE_URL
+# PUBLIC_SUPABASE_ANON_KEY
+# ENVIRONMENT

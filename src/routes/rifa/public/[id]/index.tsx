@@ -53,7 +53,18 @@ export default component$(() => {
           <h1 class="text-primary mb-4">{raffle.value.title}</h1>
           <div class="d-flex justify-content-between align-items-center mb-3">
             <span class="fw-medium text-secondary">Fecha del sorteo:</span>
-            <span class="text-danger fw-bold">25/07/25, 10PM</span>
+            <span class="text-danger fw-bold">
+              {raffle.value.draw_date 
+                ? new Date(raffle.value.draw_date).toLocaleDateString('es-ES', {
+                    day: '2-digit',
+                    month: '2-digit', 
+                    year: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                  })
+                : 'Fecha por confirmar'
+              }
+            </span>
           </div>
           <p class="fw-semibold">Participa en esta rifa y gana:</p>
           <p class="text-secondary">{raffle.value.description}</p>
